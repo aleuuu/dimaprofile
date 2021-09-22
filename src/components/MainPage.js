@@ -6,11 +6,8 @@ import Content from './Content'
 
 function Main(){
     
-
-
-
     return (
-        <div className="background">
+        <div className="background" id='a'>
             <div className="container">
                 <Header></Header>
             </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import {Link} from 'react-router-dom'
 
 import { useRef } from 'react';
 
@@ -22,7 +22,9 @@ function Header(){
             className="header">
                 <h1>-PORTFOLIO</h1>
                 <ul>
-                    <li>Проекты</li>
+                    <Link to="/works">
+                        <li>Проекты</li>
+                    </Link>
                     <li>Обо мне</li>
                     <li>Резюме</li>
                     <li>Контакты</li>

@@ -3,7 +3,7 @@ import Photo from '../img/asdaffgfgh.png'
 import vk from '../icons/icons8-vk-circled-25.png'
 import instagram from '../icons/icons8-instagram-25.png'
 import facebook from '../icons/icons8-facebook-25.png'
-
+import {Link} from 'react-router-dom'
 
 import { useEffect, useRef } from 'react';
 
@@ -34,6 +34,15 @@ function Content(props) {
     
     return(
         <div>
+            <div className="row">
+                <div>
+                    
+                </div>
+                <img 
+                    ref={el => photo = el}
+                    src={Photo}>
+                </img>
+            </div> 
             <div className="content">
                 <div className="container">
                     <h1
@@ -52,28 +61,26 @@ function Content(props) {
                     <ul 
                     ref={el => contacts = el}
                     className="contacts">
-                        <li className="item">
-                            <img src={vk}></img>
-                        </li>
-                        <li className="item">
-                            <img src={instagram}></img>
-                        </li>
-                        <li className="item">
-                            <img src={facebook}></img>
-                        </li>
+                        <a href='https://vk.com/aleu_dima' target="blank">
+                            <li className="item">
+                                <img src={vk}></img>
+                            </li>
+                        </a>
+                        <a href='https://www.instagram.com/aleu_dima/' target="blank">
+                            <li className="item">
+                                <img src={instagram}></img>
+                            </li>
+                        </a>
+                        <a href='https://www.facebook.com/profile.php?id=100069712394626' target="blank">
+                            <li className="item">
+                                <img src={facebook}></img>
+                            </li>
+                        </a>  
                     </ul>
                 </div>
             </div>
 
-            <div className="row">
-                <div>
-                    
-                </div>
-                <img 
-                    ref={el => photo = el}
-                    src={Photo}>
-                </img>
-            </div> 
+            
         </div>
         
     )
