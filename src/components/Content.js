@@ -34,15 +34,6 @@ function Content(props) {
     
     return(
         <div>
-            <div className="row">
-                <div>
-                    
-                </div>
-                <img 
-                    ref={el => photo = el}
-                    src={Photo}>
-                </img>
-            </div> 
             <div className="content">
                 <div className="container">
                     <h1

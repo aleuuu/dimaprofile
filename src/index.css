@@ -159,6 +159,11 @@ ul{
 .backB{
   float: right;
 }
+@media (max-width: 1600px) and (min-width: 1101px) {
+  .contacts{
+    margin-top: 140px;
+  }
+}
 @media (max-width: 1100px) and (min-width: 790px) {
   .row{
     height: 60vh;
