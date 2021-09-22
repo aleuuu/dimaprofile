@@ -21,7 +21,6 @@ function Content(props) {
 
 
     useEffect(() => {
-        TweenMax.from(photo, 1.8, {opacity: 0, x: 190, ease: Power3.easeOut, delay: .8})
         TweenMax.from(textDew, 1.4, {opacity: 0, y: -40, ease: Power3.easeOut, delay: 1.2})
         TweenMax.from(text, 1.4, {opacity: 0, y: -40, ease: Power3.easeOut, delay: 1.6})
         TweenMax.from(textP, 1.4, {opacity: 0, y: -40, ease: Power3.easeOut, delay: 2.0})
