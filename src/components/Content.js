@@ -1,5 +1,4 @@
 import React from 'react';
-import Photo from '../img/asdaffgfgh.png'
 import vk from '../icons/icons8-vk-circled-25.png'
 import instagram from '../icons/icons8-instagram-25.png'
 import facebook from '../icons/icons8-facebook-25.png'
@@ -14,7 +13,6 @@ import {TweenMax, Power3} from 'gsap'
 function Content(props) {
     
     
-    let photo = useRef(null)
     let textDew = useRef(null)
     let text = useRef(null)
     let textP = useRef(null)
