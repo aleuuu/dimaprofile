@@ -166,9 +166,67 @@ ul{
 .p-right{
   text-align: right;
 }
-@media (max-width: 1600px) and (min-width: 1101px) {
+.containerPageMore{
+  width: 55%;
+  margin: 0 auto;
+  padding: 90px
+}
+.containerPageMore h1{
+  font-size: 38px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2b2b2b;
+  font-weight: lighter;
+  margin-bottom: 130px;
+}
+.rowMore{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  align-items: flex-end;
+}
+.rowMore p{
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 70px;
+}
+.dima{
+  height: 35vh;
+}
+.dimaMargin{
+  margin-bottom: 50px;
+}
+.border1px{
+  height: 1px;
+  width: 100%;
+  background: #4e4e4e;
+  margin: 20vh auto;
+}
+@media (max-width: 1600px) and (min-width: 1281px) {
   .contacts{
     margin-top: 140px;
+  }
+  .content{
+    margin: 150px auto;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1101px) {
+  .row{
+    height: 60vh;
+  }
+  .content{
+    margin: 150px auto;
+  }
+  .content h1{
+    font-size: 45px;
+  }
+  .contacts{
+    margin-top: 70px;
+  }
+  .down{
+    margin-top: 20px;
   }
 }
 @media (max-width: 1100px) and (min-width: 790px) {
@@ -189,6 +247,12 @@ ul{
   }
   .contacts{
     width: 25%;
+  }
+  .content h1{
+    font-size: 35px;
+  }
+  .content{
+    margin: 100px auto;
   }
 }
 @media (max-width: 559px) and (min-width: 555px) {

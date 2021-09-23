@@ -23,11 +23,10 @@ function Header(){
                 <h1>-PORTFOLIO</h1>
                 <ul>
                     <Link to="/works">
-                        <li>Проекты</li>
+                        <li>Мои проекты</li>
                     </Link>
-                    <li>Обо мне</li>
                     <li>Резюме</li>
-                    <li>Контакты</li>
+                    <li>Услуги</li>
                 </ul>
             </div>
     )

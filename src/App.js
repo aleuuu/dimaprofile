@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import MainPage from './components/MainPage'
 import WorksPage from './components/WorksPage'
+import More from './components/More'
 
 
 
@@ -14,13 +15,14 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/more">
+            <More></More>
+        </Route>
         <Route path="/works">
-            <WorksPage
-            
-            ></WorksPage>
+            <WorksPage></WorksPage>
         </Route>
         <Route>
-          <MainPage></MainPage>
+          <MainPage path="/"></MainPage>
         </Route>
       </Switch>
     </Router>

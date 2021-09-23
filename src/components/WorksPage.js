@@ -47,9 +47,11 @@ function MainPage(props) {
                             <span>2021</span>
                         </div>
                         
-                        <img 
-                        ref={el => progectC = el}
-                        src={Project1} className="project1"></img>
+                        <a href="https://aleuuu.github.io/colldesign" target="_blank">
+                            <img 
+                            ref={el => progectC = el}
+                            src={Project1} className="project1"></img>
+                        </a>
                     </div>
                     <p onClick={Down} className="down" 
                     ref={el => downbutton = el}

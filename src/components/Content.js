@@ -2,6 +2,7 @@ import React from 'react';
 import vk from '../icons/icons8-vk-circled-25.png'
 import instagram from '../icons/icons8-instagram-25.png'
 import facebook from '../icons/icons8-facebook-25.png'
+import hh from '../icons/hh.png'
 import {Link} from 'react-router-dom'
 
 import { useEffect, useRef } from 'react';
@@ -43,9 +44,11 @@ function Content(props) {
                     ref={el => textP = el}
                     >Этот сайт - мое портфолио,<br/> на нем представлены мои проекты, информация обо мне,<br/> а так же резюме.
                     </p>
-                    <button
-                    ref={el => but = el}
-                    >Читать больше</button>
+                    <Link to="/more">
+                        <button
+                        ref={el => but = el}
+                        >Читать больше</button>
+                    </Link>
                     <ul 
                     ref={el => contacts = el}
                     className="contacts">
@@ -63,7 +66,12 @@ function Content(props) {
                             <li className="item">
                                 <img src={facebook}></img>
                             </li>
-                        </a>  
+                        </a>
+                        <a href='https://togliatti.hh.ru/resume/72957f68ff08b44e880039ed1f7267624a3277' target="blank">
+                            <li className="item">
+                                <img src={hh}></img>
+                            </li>
+                        </a>
                     </ul>
                 </div>
             </div>
