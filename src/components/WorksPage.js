@@ -13,10 +13,14 @@ function MainPage(props) {
     let wrapper = useRef(null)
     let progectC = useRef(null)
     let text = useRef(null)
+    let progectC2 = useRef(null)
+    let text2 = useRef(null)
     
     let Down =(() => {
         TweenMax.to(text, 1.7, {opacity: 0, y: -700, ease: Power3.easeOut,})
         TweenMax.to(progectC, 1.7, {opacity: 0, y: -700, ease: Power3.easeOut,})
+        TweenMax.to(text2, 1.7, {y: -700, ease: Power3.easeOut,})
+        TweenMax.to(progectC2, 1.7, {y: -700, ease: Power3.easeOut,})
     })
 
 
@@ -49,7 +53,18 @@ function MainPage(props) {
                         <p className="backB">Назад</p>
                     </Link>
                 </div>
-                
+                <div className="containerPageWorks">
+                    <div className="rowWorks">
+                        <img 
+                            ref={el => progectC2 = el}
+                            src={Project1} className="project1"></img>
+                        <div
+                        ref={el => text2 = el}>
+                            <p>Проект, разработанный<br/> для моего колледжа, является системой дополнительного образования</p>
+                            <span>2021</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         

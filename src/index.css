@@ -224,4 +224,8 @@ ul{
   .content{
     margin: 80px auto;
   }
+  .space{
+    height: 200px;
+    width: 100%;
+  }
 }
