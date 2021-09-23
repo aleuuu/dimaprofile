@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 import {Link} from 'react-router-dom'
 import Project1 from '../img/unknown.png'
+import Project2 from '../img/unknown (1).png'
 
 import {TweenMax, Power3} from 'gsap'
 
@@ -61,11 +62,11 @@ function MainPage(props) {
                     <div className="rowWorks">
                         <img 
                             ref={el => progectC2 = el}
-                            src={Project1} className="project1"></img>
+                            src={Project2} className="project1"></img>
                         <div
                         ref={el => text2 = el}>
-                            <p  className="p-right">Проект, разработанный<br/> для моего колледжа, является системой дополнительного образования</p>
-                            <span  className="float-right">2021</span>
+                            <p  className="p-right">Проект, для обучения разработки сайтов<br/> людей которые имеют небольшой опыт в разработке</p>
+                            <span  className="float-right">2020</span>
                         </div>
                     </div>
                 </div>
