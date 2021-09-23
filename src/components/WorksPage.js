@@ -15,12 +15,14 @@ function MainPage(props) {
     let text = useRef(null)
     let progectC2 = useRef(null)
     let text2 = useRef(null)
+    let downbutton = useRef(null)
     
     let Down =(() => {
         TweenMax.to(text, 1.7, {opacity: 0, y: -700, ease: Power3.easeOut,})
         TweenMax.to(progectC, 1.7, {opacity: 0, y: -700, ease: Power3.easeOut,})
         TweenMax.to(text2, 1.7, {y: -700, ease: Power3.easeOut,})
         TweenMax.to(progectC2, 1.7, {y: -700, ease: Power3.easeOut,})
+        TweenMax.to(downbutton, 1.7, {opacity: 0, ease: Power3.easeOut, delay: .9})
     })
 
 
@@ -48,7 +50,9 @@ function MainPage(props) {
                         ref={el => progectC = el}
                         src={Project1} className="project1"></img>
                     </div>
-                    <p onClick={Down} className="down">Еще</p>
+                    <p onClick={Down} className="down" 
+                    ref={el => downbutton = el}
+                    >Еще</p>
                     <Link to='/'>
                         <p className="backB">Назад</p>
                     </Link>
@@ -60,8 +64,8 @@ function MainPage(props) {
                             src={Project1} className="project1"></img>
                         <div
                         ref={el => text2 = el}>
-                            <p>Проект, разработанный<br/> для моего колледжа, является системой дополнительного образования</p>
-                            <span>2021</span>
+                            <p  className="p-right">Проект, разработанный<br/> для моего колледжа, является системой дополнительного образования</p>
+                            <span  className="float-right">2021</span>
                         </div>
                     </div>
                 </div>
