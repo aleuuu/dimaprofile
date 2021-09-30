@@ -29,7 +29,6 @@ function More(props){
                         </div>
                         <img className="dima" src={Dima}></img>
                     </div>
-                    <div className="border1px"></div>
                 </div>
             </div>
         </div>

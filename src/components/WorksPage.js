@@ -62,9 +62,11 @@ function MainPage(props) {
                 </div>
                 <div className="containerPageWorks">
                     <div className="rowWorks">
-                        <img 
-                            ref={el => progectC2 = el}
-                            src={Project2} className="project1"></img>
+                        <a href='https://aleuuu.github.io/project-for-portfolio/'>
+                            <img 
+                                ref={el => progectC2 = el}
+                                src={Project2} className="project1"></img>
+                        </a>
                         <div
                         ref={el => text2 = el}>
                             <p  className="p-right">Проект, для обучения разработки сайтов<br/> людей которые имеют небольшой опыт в разработке</p>
